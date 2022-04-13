@@ -17,10 +17,6 @@ body{
     font-family: 'roboto', sans-serif;
 }
 
-.nav{
-    z-index: 1;
-}
-
 .navbar{
     position: fixed;
     top: 0;
@@ -81,6 +77,6 @@ body{
 .user-profile{
     width: 22px;
     border-radius: 50%;
-    background-image: url(img/profile-pic.png);
+    background-image: url(https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces);
     background-size: cover;
 }

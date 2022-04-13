@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import "./postCard.css"
+import React, { Component } from 'react';
+import "./postCard.css";
 
 class ActionBar extends Component {
     constructor(){
@@ -28,8 +28,8 @@ class ActionBar extends Component {
     render(){
       return (
         <div className="card-action-bar">
-          <a onClick={this.toggleLike}><i className={ this.state.liked ? "fas fa-heart" : "far fa-heart" }/></a>
-          <a onClick={this.markPost}><i className={ this.state.marked ? "fas fa-bookmark" : "far fa-bookmark" }/></a>
+          <a onClick={this.toggleLike}><i className={ this.state.liked ? "fa fa-heart" : "fa fa-heart-o" }/></a>
+          <a onClick={this.markPost}><i className={ this.state.marked ? "fa fa-bookmark" : "fa fa-bookmark-o" }/></a>
         </div>
       )
     }

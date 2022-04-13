@@ -19,9 +19,7 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 *::after {
     box-sizing: border-box;
 }
-.main-section{
-    z-index: 0;
-}
+
 body {
     font-family: "Open Sans", Arial, sans-serif;
     min-height: 100vh;
@@ -111,11 +109,6 @@ img {
     border-radius: 0.3rem;
     padding: 0 2.4rem;
     margin-left: 2rem;
-}
-
-.profile-settings-btn {
-    font-size: 2rem;
-    margin-left: 1rem;
 }
 
 .profile-stats {

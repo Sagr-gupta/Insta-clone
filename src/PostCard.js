@@ -1,5 +1,5 @@
-import React from 'react'
-import "./postCard.css"
+import React from 'react';
+import "./postCard.css";
 import Card from './Card';
 class PostCard extends React.Component {
     // state = {
@@ -25,7 +25,11 @@ class PostCard extends React.Component {
     render(){
     return (
         <>
-        <Card postData={this.props.posts}/>
+        <Card postData={this.props.posts}
+        like={this.props.like}
+        id={this.props.id}
+        vist={this.props.vist}
+        add_comment={this.props.add_comment}/>
         </>
     );
     }

@@ -1,10 +1,11 @@
-import React from 'react'
-import "./postCard.css"
+import React from 'react';
+import "./postCard.css";
+
 class CommentBox extends React.Component {
     constructor(){
       super();
       this.state = {
-        user: "codepen.person",
+        user: "emilly__",
         comment: null
       }
     }
@@ -22,11 +23,11 @@ class CommentBox extends React.Component {
     }
     
     render() {
-      let buttonClass = this.state.comment === null ||  this.state.comment === ""?  "" : "postable";
+      let buttonclassName = this.state.comment === null ||  this.state.comment === ""?  "" : "postable";
       return (
         <>
           <input name="comment" placeholder="Add a comment..." value={this.state.comment} default="comment" onChange={ e => { this.updateComment(e) }}/>
-          <button className={buttonClass} onClick={this.submitComment}>Post</button>
+          <button classNameName={buttonclassName} onClick={this.submitComment}>Post</button>
         </>
       );
     }

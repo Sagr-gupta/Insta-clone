@@ -8,7 +8,7 @@
   .card {
     z-index: 1000;
     border: var(--card-border);
-    position:absolute;
+    position:fixed;
     top:10vh;
     left: 50vw;
     transform: translateX(-50%);
@@ -153,4 +153,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }.vis-toggle{
+    position:absolute;
+    top:5px;
+    right:5px;
+    z-index: 1000000;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 100vw;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .card-left-container{
+      height: auto;
+      width: 100%;
+    }
+    .card-image-container {
+    width: 100%;
+    height: auto;
+    }
   }
